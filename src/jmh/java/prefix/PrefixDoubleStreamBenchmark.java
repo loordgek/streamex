@@ -1,5 +1,5 @@
 /*
- * Copyright 2015, 2023 StreamEx contributors
+ * Copyright 2015, 2024 StreamEx contributors
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,15 +14,19 @@
  * limitations under the License.
  */
 
-package one.util.streamex.benchmark.prefix;
+package prefix;
 
 import one.util.streamex.DoubleStreamEx;
-import org.openjdk.jmh.annotations.Benchmark;
-import org.openjdk.jmh.annotations.Param;
-import org.openjdk.jmh.annotations.Scope;
-import org.openjdk.jmh.annotations.State;
+import org.openjdk.jmh.annotations.*;
 
+import java.util.concurrent.TimeUnit;
+
+@BenchmarkMode(Mode.AverageTime)
+@OutputTimeUnit(TimeUnit.MILLISECONDS)
 @State(Scope.Benchmark)
+@Fork(value = 1)
+@Warmup(iterations = 5, timeUnit = TimeUnit.MILLISECONDS, time = 5000)
+@Measurement(iterations = 5, timeUnit = TimeUnit.MILLISECONDS, time = 5000)
 public class PrefixDoubleStreamBenchmark {
     @Param({"100000"})
     private int N;

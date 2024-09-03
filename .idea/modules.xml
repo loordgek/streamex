@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/benchmark.iml" filepath="$PROJECT_DIR$/.idea/benchmark.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/streamex.iml" filepath="$PROJECT_DIR$/.idea/streamex.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/streamex-16.iml" filepath="$PROJECT_DIR$/.idea/streamex-16.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/streamex-9.iml" filepath="$PROJECT_DIR$/.idea/streamex-9.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/streamex.jmh.iml" filepath="$PROJECT_DIR$/.idea/modules/streamex.jmh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/streamex.main.iml" filepath="$PROJECT_DIR$/.idea/modules/streamex.main.iml" />
     </modules>
   </component>
 </project>

@@ -3,17 +3,20 @@
   <component name="CompilerConfiguration">
     <addNotNullAssertions enabled="false" />
     <annotationProcessing>
-      <profile name="Maven default annotation processors profile" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Gradle Imported" enabled="true">
         <outputRelativeToContentRoot value="true" />
-        <module name="benchmark" />
-        <module name="streamex" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjdk.jmh/jmh-generator-annprocess/1.35/50fba446d32d22f95f51a391f3450e03af006754/jmh-generator-annprocess-1.35.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjdk.jmh/jmh-core/1.35/c14d712be8e423969fcd344bc801cf5d3ea3b62a/jmh-core-1.35.jar" />
+          <entry name="$MAVEN_REPOSITORY$/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar" />
+        </processorPath>
+        <module name="streamex.main" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="benchmark" target="1.8" />
-      <module name="streamex" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

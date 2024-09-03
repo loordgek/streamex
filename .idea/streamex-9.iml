@@ -4,8 +4,8 @@
     <output url="file://$MODULE_DIR$/target/classes-9" />
     <output-test url="file://$MODULE_DIR$/target/test-classes-9" />
     <exclude-output />
-    <content url="file://$MODULE_DIR$/src/main/java-mr">
-      <sourceFolder url="file://$MODULE_DIR$/src/main/java-mr/9" isTestSource="false" />
+    <content url="file://$MODULE_DIR$/src/main/java/one/util/streamex/java-mr">
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java/one/util/streamex/java-mr/9" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
